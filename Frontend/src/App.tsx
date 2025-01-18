@@ -1,11 +1,11 @@
 import React from 'react'
 import './App.scss'
-import EnrutadorDeApp from './enrutador/Enrutador'
+import RouterApp from './router/Router'
 
 function App() {
   return (
     <div className="App">
-      <EnrutadorDeApp />
+      <RouterApp />
     </div>
   )
 }
