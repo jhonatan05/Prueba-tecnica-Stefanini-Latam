@@ -1,21 +1,20 @@
 import React from 'react'
 import './Dashboard.scss'
-import ListTask from '../../components/commons/ListTask/ListTask'
+import ListTask from '../../components/ListTask/ListTask'
 import { useNavigate } from 'react-router-dom'
 
 const Dashboard = () => {
-  //Dashboard
   const navigate = useNavigate()
 
   const handleNavigate = () => {
     navigate('/add')
   }
   return (
-    <section className="task">
-      <div className="listTask">
+    <section className="dashboard">
+      <div className="dashboard__list-task">
         <h2>Lista de tareas</h2>
-        <section className="listTask__buttons">
-          <button type="button" className="listTask__buttons__add" onClick={handleNavigate}>
+        <section className="dashboard__list-task__buttons">
+          <button type="button" className="dashboard__list-task__buttons__add" onClick={handleNavigate}>
             Agregar Tareas
           </button>
         </section>

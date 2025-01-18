@@ -6,6 +6,7 @@ import './ListTask.scss'
 const ListTask = (): any => {
   const navigate = useNavigate()
   const [task, setTask] = useState([])
+  
   useEffect(() => {
     const listTask = fetch(`http://localhost:8080/tasks`)
     listTask.then((resp) => {
@@ -29,8 +30,8 @@ const ListTask = (): any => {
   }
 
   return (
-    <div className='ListTask'>
-      <div className='ListTask__colums'>
+    <div className='list-task'>
+      <div className='list-task__colums'>
         <span>Id</span>
         <span>Titulo</span>
         <span>Descripcion</span>
@@ -39,8 +40,8 @@ const ListTask = (): any => {
       </div>
       <div className="scroll-container">
       {task.map((list) => {
-        const { id, title, description } = list
-        return <Task title={title} id={id} description={description} handleclick={handleClick} />
+        const { id, title, description, createdAt } = list
+        return <Task title={title} id={id} description={description} createdAt={createdAt} handleclick={handleClick} />
       })}
       </div>
     </div>

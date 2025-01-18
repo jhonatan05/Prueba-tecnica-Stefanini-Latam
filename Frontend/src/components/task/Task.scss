@@ -1,4 +1,6 @@
-.Task{
+$border-task: 1px solid #c5c5c5;
+
+.task{
     display: grid;
     justify-content: start;
     grid-template-columns:  6% 29% 29% 29% 6%;
@@ -11,8 +13,8 @@
     &:hover{
         transform: scale(1.005);
         border-radius: 0px 0px 4px 4px;
-        border-bottom:1px solid #c5c5c5;
-        border-right:1px solid #c5c5c5;
-        border-left:1px solid #c5c5c5;
+        border-bottom:$border-task;
+        border-right:$border-task;
+        border-left:$border-task;
     }
 }
