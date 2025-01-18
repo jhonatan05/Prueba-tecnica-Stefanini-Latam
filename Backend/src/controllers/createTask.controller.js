@@ -3,7 +3,12 @@ import { writeFile, readFile } from '../utils/file.js'
 
 export const createTask = async (req, res) => {
   try {
-    const nuevoDato = { id: req.body.id, title: req.body.title, description: req.body.description }
+
+    const currentDate = new Date();
+    const formattedDate = `${currentDate.getDate().toString().padStart(2, '0')}/${
+      (currentDate.getMonth() + 1).toString().padStart(2, '0')
+    }/${currentDate.getFullYear()}`;
+    const nuevoDato = { id: req.body.id, title: req.body.title, description: req.body.description, createdAt: formattedDate, }
 
     fs.readFile('base_de_datos.json', 'utf8', (err, data) => {
       if (err) {
