@@ -1,6 +1,6 @@
 import React from 'react'
 import './Dashboard.scss'
-import ApiTask from '../../components/commons/apiTask/ApiTask'
+import ListTask from '../../components/commons/ListTask/ListTask'
 import { useNavigate } from 'react-router-dom'
 
 const Dashboard = () => {
@@ -20,7 +20,7 @@ const Dashboard = () => {
           </button>
         </section>
       </div>
-      <ApiTask />
+      <ListTask />
     </section>
   )
 }

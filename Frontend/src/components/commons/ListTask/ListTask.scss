@@ -1,9 +1,12 @@
-.Task{
+.ListTask{
+    background-color: white;
+    width: 100%;
+
+    &__colums{
     display: grid;
     justify-content: start;
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: auto;
     width: 100%;
-    padding: 0px;
-    gap: 0px;
+    }
 }

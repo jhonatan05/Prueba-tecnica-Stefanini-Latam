@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Dashboard from '../page/listTask/Dashboard'
+import Dashboard from '../page/dashboardPage/Dashboard'
 import AddTask from '../components/addTask/AddTask'
 
 

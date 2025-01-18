@@ -10,13 +10,14 @@ interface DeleteButtonsProps {
 
 const Task = ({ title, id, description, handleclick }: DeleteButtonsProps) => {
   return (
-    <div className="common-button">
-      <button onClick={() => handleclick(id)} className="common-button__delete">
+    <div className="Task">
+      <button onClick={() => handleclick(id)} className="Task__delete">
         Eliminar
       </button>
-      <span className="common-index"> {id}</span>
-      <span className="common-button__title">{title}</span>
-      <span className="common-button__description">{description}</span>
+      <span className="Task__index"> {id}</span>
+      <span className="Task__title">{title}</span>
+      <span className="Task__description">{description}</span>
+      <span>Fecha</span>
     </div>
   )
 }
