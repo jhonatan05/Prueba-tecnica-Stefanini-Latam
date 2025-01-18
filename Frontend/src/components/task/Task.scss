@@ -7,7 +7,7 @@ $border-task: 1px solid #c5c5c5;
     grid-template-rows: auto;
     width: calc(100% - 12px);
     padding: 6px;
-    gap: 0px;
+    gap: 6px;
     align-items: center;
 
     &:hover{
@@ -16,5 +16,15 @@ $border-task: 1px solid #c5c5c5;
         border-bottom:$border-task;
         border-right:$border-task;
         border-left:$border-task;
+    }
+
+    &__title{
+        font-weight: 600;
+    }
+    &__description{
+        width: 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: pre;
     }
 }
