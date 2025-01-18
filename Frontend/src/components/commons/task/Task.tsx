@@ -1,4 +1,8 @@
 import React from 'react'
+import {
+  faTrash,
+} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './Task.scss'
 
 interface DeleteButtonsProps {
@@ -11,13 +15,13 @@ interface DeleteButtonsProps {
 const Task = ({ title, id, description, handleclick }: DeleteButtonsProps) => {
   return (
     <div className="Task">
-      <button onClick={() => handleclick(id)} className="Task__delete">
-        Eliminar
-      </button>
       <span className="Task__index"> {id}</span>
       <span className="Task__title">{title}</span>
       <span className="Task__description">{description}</span>
       <span>Fecha</span>
+      <button onClick={() => handleclick(id)} className="Task__delete">
+      <FontAwesomeIcon icon={faTrash} />
+      </button>
     </div>
   )
 }

@@ -1,9 +1,18 @@
 .Task{
     display: grid;
     justify-content: start;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns:  6% 29% 29% 29% 6%;
     grid-template-rows: auto;
-    width: 100%;
-    padding: 0px;
+    width: calc(100% - 12px);
+    padding: 6px;
     gap: 0px;
+    align-items: center;
+
+    &:hover{
+        transform: scale(1.005);
+        border-radius: 0px 0px 4px 4px;
+        border-bottom:1px solid #c5c5c5;
+        border-right:1px solid #c5c5c5;
+        border-left:1px solid #c5c5c5;
+    }
 }

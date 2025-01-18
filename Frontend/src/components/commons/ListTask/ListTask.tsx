@@ -31,16 +31,18 @@ const ListTask = (): any => {
   return (
     <div className='ListTask'>
       <div className='ListTask__colums'>
-        <span>Eliminar</span>
         <span>Id</span>
         <span>Titulo</span>
         <span>Descripcion</span>
-        <span>Fecha</span>
+        <span>Fecha</span> 
+        <span>Eliminar</span>
       </div>
+      <div className="scroll-container">
       {task.map((list) => {
         const { id, title, description } = list
         return <Task title={title} id={id} description={description} handleclick={handleClick} />
       })}
+      </div>
     </div>
   )
 }
