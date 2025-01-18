@@ -25,7 +25,7 @@ const Task = ({ title, id, description, createdAt, handleclick }: DeleteButtonsP
       <FontAwesomeIcon icon={faTrash} />
       </button>
     </div>
-  )
+  ) 
 }
 
 export default Task
