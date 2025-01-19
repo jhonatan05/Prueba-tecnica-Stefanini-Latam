@@ -1,74 +1,41 @@
-body {
-  background-image: url('./Background.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-  overflow-x: hidden;
-  
-}
-
 .dashboard {
   display: flex;
   width: 76%;
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
-  padding: 10px 10px 10px 10px;
-  background-color: rgba($color: #888888, $alpha: 0.3);
+  padding: 10px;
+  background-color: #8787874d;
   border-radius: 8px;
   max-height: calc(100vh - 70px);
   overflow: hidden;
 
-    &__list-task {
+  &__list-task {
     width: calc(100% - 16px);
     display: flex;
     align-items: center;
     padding: 6px;
-    background-color: rgba($color: white, $alpha: 0.6);
+    background-color: #ffffff99;
     justify-content: space-between;
     border-radius: 8px;
 
-      &__buttons {
+    &__buttons {
       display: flex;
       gap: 8px;
 
-        &__add {
+      &__add {
         padding: 8px;
         background-color: #02ec02;
         color: #ffffff;
         font-weight: 700;
-        border: 0.1px solid rgb(255, 255, 255);
+        border: 0.1px solid #ffffff;
         border-radius: 8px;
         cursor: pointer;
 
-          &:hover {
+        &:hover {
           transform: scale(1.02);
+        }
       }
-     }
     }
-  }
-}
-
-
-
-//task
-
-.task {
-  display: flex;
-  gap: 30px;
-  padding-left: 8px;
-}
-.task__delete {
-  padding: 6px;
-  background-color: red;
-  color: #ffffff;
-  font-weight: 700;
-  border: 0.1px solid black;
-  border-radius: 50%;
-  cursor: pointer;
-  width: 30%;
-
-  &:hover {
-    transform: scale(1.02);
   }
 }

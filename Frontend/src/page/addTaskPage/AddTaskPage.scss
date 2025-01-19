@@ -30,7 +30,6 @@ $padding-common: 10px;
     min-height: 50%;
     border-radius: 26px;
     background-color: #f5f5f5b3;
-    background-color: rgba($color: #f5f5f5, $alpha: 0.7);
 
     &__title {
       display: flex;
@@ -42,13 +41,14 @@ $padding-common: 10px;
         font-size: larger;
         font-weight: 600;
       }
-      & input { 
+
+      & input {
         border: 0px;
         border-bottom: $border-common;
         border-radius: 2px;
         padding: 10px 10px 10px 15px;
         width: 100%;
-        background-color: rgba($color: #ffffff, $alpha: 0.3);
+        background-color: #ffffff99;
         font-weight: 700;
       }
     }
@@ -63,18 +63,19 @@ $padding-common: 10px;
         border-bottom: $border-common;
         border-radius: 2px;
         padding: 5px 0px 5px 10px;
-        background-color: rgba($color: #ffffff, $alpha: 0.3);
+        background-color: #ffffff4d;
         font-weight: 700;
-        width: 100%; 
-        max-width: 100%; 
-        max-height: 150px; 
-        resize: vertical; 
-        box-sizing: border-box; 
+        width: 100%;
+        max-width: 100%;
+        max-height: 150px;
+        resize: vertical;
+        box-sizing: border-box;
 
         &:focus {
           border-color: black;
         }
       }
+
       & label {
         font-size: larger;
         font-weight: 600;
@@ -90,16 +91,15 @@ $padding-common: 10px;
         padding: $padding-common;
         border: $border-common;
         border-radius: border-radius;
-
         &:hover {
           transform: scale(1.01);
         }
       }
+
       &__back {
         padding: $padding-common;
         border: $border-common;
         border-radius: border-radius;
-
         &:hover {
           transform: scale(1.01);
         }
