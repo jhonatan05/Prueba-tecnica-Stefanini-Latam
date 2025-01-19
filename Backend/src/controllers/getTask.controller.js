@@ -1,6 +1,6 @@
 import { readFile } from '../utils/file.js'
-export const getTasks = async (req, res) => {
-  
+
+export const getTasks = async (_req, res) => {
   try {
     const data = await readFile()
     if (!data) {

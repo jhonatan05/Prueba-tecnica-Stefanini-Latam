@@ -1,10 +1,11 @@
 import express from 'express'
 import taskRouter from './routes/task.router.js'
-import cors from 'cors';
+import cors from 'cors'
+
 const app = express()
 
 app.use(express.json())
-app.use(express.urlencoded({extended:false}))
+app.use(express.urlencoded({ extended: false }))
 app.use(cors())
 
 app.use(taskRouter)
