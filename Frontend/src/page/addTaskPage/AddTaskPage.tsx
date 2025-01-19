@@ -6,7 +6,7 @@ const AddTaskPage = () => {
   const navigate = useNavigate()
   const [title, setTitle] = useState('')
   const [description, setDescription] = useState('')
-  
+
   const handleNavigate = () => {
     navigate('/')
   }
@@ -16,16 +16,16 @@ const AddTaskPage = () => {
       title,
       description,
     }
-    
+
     try {
       await fetch('http://localhost:8080/task', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(newTask)
-        
-       } );
-       handleNavigate()
+        body: JSON.stringify(newTask),
+      })
+      handleNavigate()
     } catch (error) {
+      // TODO: Crear modal de error
       console.error('Error en la solicitud:', error)
     }
   }

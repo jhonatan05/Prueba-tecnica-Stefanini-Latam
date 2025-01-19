@@ -9,6 +9,7 @@ const Dashboard = () => {
   const handleNavigate = () => {
     navigate('/add')
   }
+
   return (
     <section className="dashboard">
       <div className="dashboard__list-task">

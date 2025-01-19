@@ -3,9 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Dashboard from '../page/dashboardPage/Dashboard'
 import AddTask from '../page/addTaskPage/AddTaskPage'
 
-
 const RouterApp = () => {
-  
   return (
     <BrowserRouter>
       <Routes>
